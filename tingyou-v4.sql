@@ -1,4 +1,4 @@
-/*
+﻿/*
 Navicat MySQL Data Transfer
 
 Source Server         : remote
@@ -14,7 +14,7 @@ Date: 2018-04-05 00:15:30
 */
 
 SET FOREIGN_KEY_CHECKS=0;
-
+use tingyou;
 -- ----------------------------
 -- Table structure for about
 -- ----------------------------
@@ -168,3 +168,16 @@ INSERT INTO `user` VALUES ('5', '为你而来', '123');
 INSERT INTO `user` VALUES ('6', '璀璨', '123456');
 INSERT INTO `user` VALUES ('7', '老张', '123456');
 INSERT INTO `user` VALUES ('9', 'BigBen', '123456');
+
+
+-- ----------------------------
+-- Table structure for ip
+-- ----------------------------
+DROP TABLE IF EXISTS `ip`;
+CREATE TABLE `ip` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `ip` varchar(255) NOT NULL,
+  `time` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+
